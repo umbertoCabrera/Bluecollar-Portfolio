@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>BlueCollar Portfolio — Bricklaying · Drywall · Plumbing</title>
+  <meta name="description" content="Hands-on construction portfolio: bricklaying, drywall and plumbing. Before/after project record. Ready to work in Australia." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="site-header">
+    <a class="brand" href="#top">
+      <span class="brand__mark" aria-hidden="true"></span>
+      <!-- EDITA AQUÍ: tu nombre -->
+      <span class="brand__name">Umberto Cabrera Garcia</span>
+    </a>
+    <nav class="site-nav" aria-label="Main">
+      <a href="#trades">Trades</a>
+      <a href="#projects">Projects</a>
+      <a href="#about">About</a>
+      <a class="nav-cta" href="#contact">Contact</a>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode" title="Toggle dark mode">
+        <span class="theme-toggle__icon">🌙</span>
+      </button>
+    </nav>
+  </header>
+
+  <main id="top">
+
+    <!-- ===== HERO ===== -->
+    <section class="hero">
+      <p class="stamp reveal">SITE RECORD — EST. 2018 · MENDOZA, AR</p>
+      <h1 class="hero__title reveal">
+        <span>BUILT</span>
+        <span>BY&nbsp;HAND.</span>
+        <span class="hero__title-accent">PROVEN ON SITE.</span>
+      </h1>
+      <p class="hero__lede reveal">
+        Multi-trade construction worker — <strong>bricklaying, drywall and plumbing</strong>.
+        Every project below is documented the honest way: the site as I found it,
+        and the site as I left it.
+      </p>
+      <div class="hero__actions reveal">
+        <a class="btn btn--solid" href="#projects">See the work</a>
+        <a class="btn btn--line" href="#contact">Hire me in Australia</a>
+      </div>
+      <div class="hazard" aria-hidden="true"></div>
+    </section>
+
+    <!-- ===== TRADES ===== -->
+    <section class="trades" id="trades">
+      <h2 class="section-title"><span class="section-title__no">A</span>Trades</h2>
+      <div class="trades__grid">
+        <article class="trade reveal">
+          <h3>Bricklaying</h3>
+          <p>Block and brick walls, footings with reinforced concrete beams, levelling, mortar joints, boundary and structural walls.</p>
+          <p class="trade__spec">FOOTINGS · BLOCKWORK · REINFORCEMENT</p>
+        </article>
+        <article class="trade reveal">
+          <h3>Drywall</h3>
+          <p>Steel-frame partitions and ceilings, plasterboard sheeting, exterior render over frame construction, finishing ready for paint.</p>
+          <p class="trade__spec">STEEL FRAME · SHEETING · RENDER</p>
+        </article>
+        <article class="trade reveal">
+          <h3>Plumbing</h3>
+          <p>Wall-mounted tapware installation and replacement, water supply connections, sealing and leak-free finishing in wet areas.</p>
+          <p class="trade__spec">TAPWARE · SUPPLY LINES · WET AREAS</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== PROJECTS ===== -->
+    <section class="projects" id="projects">
+      <h2 class="section-title"><span class="section-title__no">B</span>Projects — before / after</h2>
+      <p class="projects__hint stamp">DRAG THE YELLOW HANDLE ◄ ► TO COMPARE</p>
+
+      <div class="projects__grid">
+
+        <!-- Card 1: Bricklaying -->
+        <article class="card reveal">
+          <div class="compare" data-compare>
+            <img class="compare__img compare__img--after" src="assets/brick-after.jpg" alt="After: finished concrete block boundary wall, level courses and clean mortar joints" />
+            <div class="compare__before-wrap">
+              <img class="compare__img" src="assets/brick-before.jpg" alt="Before: reinforced concrete footing beam with steel starter bars, prior to blockwork" />
+            </div>
+            <div class="compare__divider" aria-hidden="true"><span class="compare__handle">◄ ►</span></div>
+            <span class="compare__tag compare__tag--before" aria-hidden="true">BEFORE</span>
+            <span class="compare__tag compare__tag--after" aria-hidden="true">AFTER</span>
+            <input class="compare__range" type="range" min="0" max="100" value="50"
+                   aria-label="Comparison slider: reinforced footing before, finished block wall after" />
+          </div>
+          <div class="card__body">
+            <p class="card__trade">BRICKLAYING</p>
+            <h3 class="card__title">Boundary wall on reinforced footing</h3>
+            <p class="card__desc">
+              Set out and poured the reinforced concrete footing beam with steel starter columns,
+              then laid the full concrete block wall — plumb, level courses and consistent joints
+              over the entire run.
+            </p>
+            <p class="card__meta">SCOPE: FOOTING → BLOCKWORK · ROLE: BRICKLAYER</p>
+          </div>
+        </article>
+
+        <!-- Card 2: Drywall ceiling -->
+        <article class="card reveal">
+          <div class="compare" data-compare>
+            <img class="compare__img compare__img--after" src="assets/ceiling-after.jpg" alt="After: plasterboard ceiling fully sheeted and screwed off, ready for finishing" />
+            <div class="compare__before-wrap">
+              <img class="compare__img" src="assets/ceiling-before.jpg" alt="Before: exposed timber roof structure with galvanised steel furring channels installed" />
+            </div>
+            <div class="compare__divider" aria-hidden="true"><span class="compare__handle">◄ ►</span></div>
+            <span class="compare__tag compare__tag--before" aria-hidden="true">BEFORE</span>
+            <span class="compare__tag compare__tag--after" aria-hidden="true">AFTER</span>
+            <input class="compare__range" type="range" min="0" max="100" value="50"
+                   aria-label="Comparison slider: exposed ceiling frame before, sheeted plasterboard ceiling after" />
+          </div>
+          <div class="card__body">
+            <p class="card__trade">DRYWALL — CEILING</p>
+            <h3 class="card__title">Suspended plasterboard ceiling</h3>
+            <p class="card__desc">
+              Installed galvanised furring channels under an existing timber roof, levelled the
+              grid, then sheeted the full ceiling in plasterboard with correct screw pattern and
+              tight joints around services.
+            </p>
+            <p class="card__meta">SCOPE: FRAME + SHEETING · ROLE: DRYWALLER</p>
+          </div>
+        </article>
+
+        <!-- Card 3: Drywall / steel frame room -->
+        <article class="card reveal">
+          <div class="compare" data-compare>
+            <img class="compare__img compare__img--after" src="assets/drywall-after.jpg" alt="After: completed rooftop room with rendered exterior walls, windows and roofing installed" />
+            <div class="compare__before-wrap">
+              <img class="compare__img" src="assets/drywall-before.jpg" alt="Before: open steel stud frame of the rooftop room during construction" />
+            </div>
+            <div class="compare__divider" aria-hidden="true"><span class="compare__handle">◄ ►</span></div>
+            <span class="compare__tag compare__tag--before" aria-hidden="true">BEFORE</span>
+            <span class="compare__tag compare__tag--after" aria-hidden="true">AFTER</span>
+            <input class="compare__range" type="range" min="0" max="100" value="50"
+                   aria-label="Comparison slider: steel stud frame before, finished rendered room after" />
+          </div>
+          <div class="card__body">
+            <p class="card__trade">DRYWALL — STEEL FRAME</p>
+            <h3 class="card__title">Rooftop room, frame to finish</h3>
+            <p class="card__desc">
+              Full steel-frame build: stud walls tied to the roof structure, external sheeting,
+              window installation and textured render finish — from open frame to a weather-tight
+              room.
+            </p>
+            <p class="card__meta">SCOPE: FRAME → RENDER · ROLE: DRYWALLER / BUILDER</p>
+          </div>
+        </article>
+
+        <!-- Card 4: Plumbing -->
+        <article class="card reveal">
+          <div class="compare" data-compare>
+            <img class="compare__img compare__img--after" src="assets/plumbing-after.jpg" alt="After: new wall-mounted kitchen tapware installed, sealed and working" />
+            <div class="compare__before-wrap">
+              <img class="compare__img" src="assets/plumbing-before.jpg" alt="Before: open wall supply point with old fitting removed" />
+            </div>
+            <div class="compare__divider" aria-hidden="true"><span class="compare__handle">◄ ►</span></div>
+            <span class="compare__tag compare__tag--before" aria-hidden="true">BEFORE</span>
+            <span class="compare__tag compare__tag--after" aria-hidden="true">AFTER</span>
+            <input class="compare__range" type="range" min="0" max="100" value="50"
+                   aria-label="Comparison slider: open supply point before, installed tapware after" />
+          </div>
+          <div class="card__body">
+            <p class="card__trade">PLUMBING</p>
+            <h3 class="card__title">Wall-mounted tapware replacement</h3>
+            <p class="card__desc">
+              Removed the failed fitting, prepared and sealed the supply points in the wall, and
+              installed new hot/cold wall-mounted tapware — tested under pressure, no leaks.
+            </p>
+            <p class="card__meta">SCOPE: REMOVE + INSTALL + TEST · ROLE: PLUMBER</p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section class="about" id="about">
+      <h2 class="section-title section-title--light"><span class="section-title__no">C</span>How I work</h2>
+      <div class="about__grid">
+        <div class="about__item reveal">
+          <h3>Documented, always</h3>
+          <p>I photograph every job before and after. What you see on this page is exactly how I hand over a site.</p>
+        </div>
+        <div class="about__item reveal">
+          <h3>Multi-trade, one worker</h3>
+          <p>Footings, blockwork, steel frame, sheeting, render, tapware — I move between trades without losing quality.</p>
+        </div>
+        <div class="about__item reveal">
+          <h3>Ready for Australia</h3>
+          <p>Available for full-time site work anywhere in Australia. Fit, reliable, used to long days and hot climates.</p>
+        </div>
+      </div>
+
+      <!-- Tickets y licencias -->
+      <h3 class="about__subtitle stamp">TICKETS &amp; LICENCES — SIGHTED ON REQUEST</h3>
+      <div class="creds__grid">
+        <article class="cred reveal">
+          <p class="cred__type">GENERAL CONSTRUCTION INDUCTION</p>
+          <h4 class="cred__name">White Card</h4>
+          <!-- EDITA AQUÍ: número de tarjeta / estado emisor si querés mostrarlo -->
+          <p class="cred__code">CPCWHS1001 · VALID — ALL STATES</p>
+        </article>
+        <article class="cred reveal">
+          <p class="cred__type">HIGH RISK WORK LICENCE</p>
+          <h4 class="cred__name">Forklift Licence</h4>
+          <p class="cred__code">TLILIC0003 · CLASS LF</p>
+        </article>
+        <article class="cred reveal">
+          <p class="cred__type">AUSTRALIAN DRIVER LICENCE</p>
+          <h4 class="cred__name">Driver Licence</h4>
+          <p class="cred__code">CLASS C · FULL</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section class="contact" id="contact">
+      <div class="hazard" aria-hidden="true"></div>
+      <p class="stamp">READY TO START — LET'S TALK</p>
+      <h2 class="contact__title">PUT ME ON<br />YOUR CREW.</h2>
+      <div class="contact__actions">
+        <!-- EDITA AQUÍ: tu email y WhatsApp -->
+        <a class="btn btn--solid btn--big" href="mailto:your.umbertooocabrera@gmail.com">your.email@example.com</a>
+        <a class="btn btn--line btn--big" href="https://wa.me/+5492994565936" target="_blank" rel="noopener">WhatsApp +54 9 261 000 0000</a>
+      </div>
+      <p class="contact__note">References and full work history available on request.</p>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <span>© <span id="year"></span> YOUR NAME — Multi-trade construction</span>
+    <span class="stamp">BRICK · DRYWALL · PLUMBING</span>
+  </footer>
+
+  <script src="main.js" defer></script>
+</body>
+</html>
