@@ -8,7 +8,9 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" /></noscript>
 
   <link rel="stylesheet" href="styles.css" />
 </head>
@@ -232,8 +234,9 @@
       <h2 class="contact__title">PUT ME ON<br />YOUR CREW.</h2>
       <div class="contact__actions">
         <!-- EDITA AQUÍ: tu email y WhatsApp -->
-        <a class="btn btn--solid btn--big" href="mailto:your.umbertooocabrera@gmail.com">your.email@example.com</a>
-        <a class="btn btn--line btn--big" href="https://wa.me/+5492994565936" target="_blank" rel="noopener">WhatsApp +54 9 261 000 0000</a>
+        <a class="btn btn--solid btn--big" href="mailto:umbertooocabrera@gmail.com">umbertooocabrera@gmail.com</a>
+        <a class="btn btn--line btn--big" href="https://wa.me/+5492994565936
+        " target="_blank" rel="noopener">WhatsApp +54 9 261 000 0000</a>
       </div>
       <p class="contact__note">References and full work history available on request.</p>
     </section>
